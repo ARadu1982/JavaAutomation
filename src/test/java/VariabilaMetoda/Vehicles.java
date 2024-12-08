@@ -1,31 +1,48 @@
 package VariabilaMetoda;
 
+import org.testng.annotations.Test;
+
 public class Vehicles {
 
-    public String Marca;
-    public  String Model;
-    public String Culoare;
-    public Integer NrPasageri;
-    public Integer AnFabricatie;
-    public Integer PutereMotor;
-    public String Combustibil;
+    public String marca;
+    public  String model;
+    public String culoare;
+    public Integer nrPasageri;
+    public Integer anFabricatie;
+    public Integer putereMotor;
+    public String combustibil;
 
-    public void prezentareMasina() {
+    @Test
+    public void metodaTest(){
+        dateMasina("Dacia","Logan","rosie",4,2023,40,"Benzina");
+        dateMasina("Audi","quatro","rosie",4,2023,150,"Benzina");
+        calculMedie(7.0,10.0);
+        calculMedie(5.0,9.0);
+    }
 
-         Marca = "Dacia";
-         Model = "Logan";
-         Culoare = "Rosu";
-         NrPasageri = 4;
-         AnFabricatie = 2024;
-         PutereMotor = 90;
-         Combustibil = "Benzina";
+    public void dateMasina(String param1, String param2, String param3,Integer param4, Integer param5, Integer param6, String param7 ) {
 
-         System.out.println("Marca masinii este: " + Marca);
-        System.out.println("Modelul de masina este: " + Model);
-        System.out.println("Culoarea masinii este: " + Culoare);
-        System.out.println("Numarul de pasageri este: " + NrPasageri);
-        System.out.println("Anul de fabricatie este: " + AnFabricatie);
-        System.out.println("Ce combustibil foloseste? " + Combustibil);
-        System.out.println("Puterea motorului este: " + PutereMotor);
+         marca = param1;
+         model = param2;
+         culoare = param3;
+         nrPasageri = param4;
+         anFabricatie = param5;
+         putereMotor = param6;
+         combustibil = param7;
+
+         System.out.println("Marca masinii este: " + marca);
+        System.out.println("Modelul de masina este: " + model);
+        System.out.println("Culoarea masinii este: " + culoare);
+        System.out.println("Numarul de pasageri este: " + nrPasageri);
+        System.out.println("Anul de fabricatie este: " + anFabricatie);
+        System.out.println("Ce combustibil foloseste? " + combustibil);
+        System.out.println("Puterea motorului este: " + putereMotor);
+    }
+
+    //calculam media la 2 numere
+
+    public void calculMedie(Double nota1, Double nota2){
+        Double rezultat = (nota1 + nota2)/2;
+        System.out.println("Media este:"+rezultat);
     }
 }
