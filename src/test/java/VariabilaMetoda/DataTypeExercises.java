@@ -16,11 +16,14 @@ public class DataTypeExercises {
         int width = 4;
         int minutes = 30;
         int side = 20;
+        int radius = 7;
+        int height = 9;
 
         //      System.out.println("Ai selectat lungimea "+length+" si latimea: "+width);
         System.out.println("Valoarea perimetrului este:"+calculateRectanglePerimeter(length,width));
         System.out.println("Conversie minute in secunde: "+convertsMinutesIntoSeconds(minutes));
         System.out.println("Arie patrat: "+calculateSquareArea(side));
+        System.out.println("Volumul unui cilindru avand raza "+radius+" si inaltimea de "+height+" este:"+calculateCylinderVolume(radius,height));
 //       scanner.close();
 
     }
@@ -45,5 +48,9 @@ public class DataTypeExercises {
 
     public int calculateSquareArea(int side){
         return 4 * side;
+    }
+
+    public double  calculateCylinderVolume(int radius, int height){
+        return Math.PI * radius * height;
     }
 }
