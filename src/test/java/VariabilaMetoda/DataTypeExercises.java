@@ -2,12 +2,7 @@ package VariabilaMetoda;
 
 import org.testng.annotations.Test;
 
-import java.util.Scanner;
-
 public class DataTypeExercises {
-//    Scanner scanner = new Scanner(System.in);
-//    int length = rectangleLength();
-//    int width = rectangleWidth();
 
     @Test
     public void executeExercises(){
@@ -32,7 +27,7 @@ public class DataTypeExercises {
 //        System.out.println("Introdu lungimea: ");
 //        return scanner.nextInt();
 //    }
-
+//
 //    public int rectangleWidth(){
 //        System.out.println("Introdu latimea: ");
 //        return scanner.nextInt();
