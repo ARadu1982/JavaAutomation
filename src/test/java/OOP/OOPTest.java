@@ -11,6 +11,8 @@ public class OOPTest {
 
         Angajat Tudor = new Angajat("Popescu","Tudor",27,"Panemar",3, 20);
         Tudor.infoAngajat();
+
+        Tudor.promovare();
     }
 
 }

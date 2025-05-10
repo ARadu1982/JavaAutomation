@@ -2,11 +2,11 @@ package OOP;
 
 public class Angajat extends Persoana{
 
-    public String firma;
+    private String firma;
 
-    public Integer experienta;
+    private Integer experienta;
 
-    public  Integer zileConcediu;
+    private Integer zileConcediu;
 
     public Angajat(String nume, String prenume, Integer varsta, String firma,Integer experienta, Integer zileConcediu) {
         super(nume, prenume, varsta);
@@ -20,5 +20,33 @@ public class Angajat extends Persoana{
         System.out.println("Firma este: "+firma);
         System.out.println("Experienta este: "+experienta);
         System.out.println("Zile de concediu: "+zileConcediu);
+    }
+
+    public void promovare(){
+        System.out.println("Angajatul cu numele "+getNume()+"si prenumele "+getPrenume()+" a fost promovat!");
+    }
+
+    public String getFirma() {
+        return firma;
+    }
+
+    public void setFirma(String firma) {
+        this.firma = firma;
+    }
+
+    public Integer getExperienta() {
+        return experienta;
+    }
+
+    public void setExperienta(Integer experienta) {
+        this.experienta = experienta;
+    }
+
+    public Integer getZileConcediu() {
+        return zileConcediu;
+    }
+
+    public void setZileConcediu(Integer zileConcediu) {
+        this.zileConcediu = zileConcediu;
     }
 }
