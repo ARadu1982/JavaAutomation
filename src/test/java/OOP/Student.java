@@ -22,6 +22,13 @@ public class Student extends Persoana {
         System.out.println("Studentul ia/nu ia bursa? "+bursa);
     }
 
+    public void mananca(){
+
+        System.out.println("Studentul mananca cand vrea el!");
+        super.mananca(); // Folosim keywordul super pentru a apela metoda initiala care a fost suprascrisa
+
+    }
+
     public void absolvire(){
         System.out.println("Studentul cu numele "+getNume()+" si prenumele"+getPrenume()+"a absolvit!");
     }
