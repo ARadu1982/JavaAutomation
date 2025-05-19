@@ -6,9 +6,10 @@ public class OOPTest {
 
     @Test
     public void metodaTest(){
-//        Student Cristi = new Student("Pop","Cristi",25,"UBB","2",true);
+        Student Cristi = new Student("Pop","Cristi",25,"UBB","2",true);
 //        Cristi.infoStudent();
 //        Cristi.mananca();
+        Cristi.infoPersoana();
 
         Angajat Tudor = new Angajat("Popescu","Tudor",27,"Panemar",3, 20);
         Tudor.infoAngajat();
@@ -17,6 +18,11 @@ public class OOPTest {
         Tudor.marire();
         Tudor.marire(10);
         Tudor.marire("Senior");
+
+        // Exemplu oop cu restaurant vegan ... min 20
+
+
+
     }
 
 }
